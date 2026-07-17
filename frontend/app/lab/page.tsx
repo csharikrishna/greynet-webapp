@@ -77,7 +77,7 @@ export default function LabPage() {
       const res = await fetch("/api/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ model_ids: selected, image: imageDataUrl }),
+        body: JSON.stringify({ modelIds: selected, image: imageDataUrl }),
       });
       if (!res.ok) throw new Error(`Request failed (${res.status})`);
       const data: ApiResponse = await res.json();
