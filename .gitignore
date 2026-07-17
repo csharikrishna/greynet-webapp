@@ -1,0 +1,20 @@
+# Environment Variables
+.env
+.env.local
+
+# Next.js
+.next/
+out/
+build/
+node_modules/
+
+# Python / PyTorch
+__pycache__/
+*.pyc
+venv/
+env/
+.pytest_cache/
+checkpoints/
+
+# macOS
+.DS_Store
